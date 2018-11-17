@@ -1,18 +1,12 @@
-# laravel-crud
-Basic CRUD Operation with Laravel and AdminLTE in Single Page
+# CBR-Ketir
+Adalah immplementasi sederhada dari Case Based Reasoning  menggunakan algoritma humming distance dan cosine similarity
 
 ## What's this repo about
 
-Simply, it's a basic create, read, update and delete operation with Laravel 5.5 and AdminLTE. Plus, it's like single page application, 
-we use Bootstrap modal window to create,update and delete data. 
+Aplikasi ini menggunakan frame laravel dan terinspirasi dari laravel basic CRUD yang dibuat oleh [Hujjat Nazari](https://github.com/Hujjat)  
 
-[watch video here](https://www.youtube.com/watch?v=hiaYGxA8IWQ&list=PLB4AdipoHpxYmPdyI3e-yH58-3CS4qoAf) how we build it. 
+[laravel basic crud](https://github.com/Hujjat/laravel-crud)
 
-
-## Example Preview
-
-1. https://ibb.co/bGwryb
-2. https://ibb.co/f51DBw
 
 ## Requirements 
 
