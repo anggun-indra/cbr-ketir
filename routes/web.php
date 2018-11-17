@@ -20,6 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('category','CategoryController');
+Route::resource('kasus','KasusController');
+Route::resource('cbrcos','CbrCoSimController');
+Route::resource('cbrdis','CbrDiSimController');
 
 Route::get('profile', function(){
     return view('profile');

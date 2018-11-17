@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Starter</title>
+  <title>CBR-Ketir</title>
    <!-- CSRF Token -->
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <link rel="stylesheet" href="{{asset('css/app.css')}}">
@@ -22,9 +22,9 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>C</b>BR</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>CBR</b>Ketir</span>
     </a>
 
     <!-- Header Navbar -->
@@ -70,15 +70,19 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li><a href="#"><i class="fa fa-file"></i> <span>Posts</span></a></li>
+        {{--<li><a href="#"><i class="fa fa-file"></i> <span>Posts</span></a></li>--}}
         
         @can('isAdmin')
-         <li class="active"><a href="{{url('category')}}"><i class="fa fa-microchip"></i> <span>Category</span></a></li>
+{{--         <li class="active"><a href="{{url('category')}}"><i class="fa fa-microchip"></i> <span>Category</span></a></li>--}}
         @endcan
 
+        <li class="active"><a href="{{url('kasus')}}"><i class="fa fa-assistive-listening-systems"></i> <span>Kasus</span></a></li>
+        <li class="active"><a href="{{url('cbrdis')}}"><i class="fa fa-assistive-listening-systems"></i> <span>CBR-Distance Similarity</span></a></li>
+        <li class="active"><a href="{{url('cbrcos')}}"><i class="fa fa-assistive-listening-systems"></i> <span>CBR-Cosine Similarity</span></a></li>
+
         @can('isAdmin')
-        <li><a href="#"><i class="fa fa-users"></i> <span>Manage User</span></a></li>
-        <li><a href="#"><i class="fa fa-gears"></i> <span>Settings</span></a></li>
+        {{--<li><a href="#"><i class="fa fa-users"></i> <span>Manage User</span></a></li>--}}
+        {{--<li><a href="#"><i class="fa fa-gears"></i> <span>Settings</span></a></li>--}}
         @endcan
         <li class="">
 
@@ -115,10 +119,11 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
-      Anything you want
+      Anggun Indra Saputra (1711600351) &
+      Dhany Ricky (1711600278)
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2016 <a href="#">Company</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2018 <a href="#">Kelompok 3</a>.</strong> All rights reserved.
   </footer>
 </div>
 
@@ -139,6 +144,32 @@
       modal.find('.modal-body #title').val(title);
       modal.find('.modal-body #des').val(description);
       modal.find('.modal-body #cat_id').val(cat_id);
+})
+  $('#edit_kasus').on('show.bs.modal', function (event) {
+
+      var button = $(event.relatedTarget)
+      var fact1 = button.data('fact1')
+      var fact1w = button.data('fact1w')
+      var fact2 = button.data('fact2')
+      var fact2w = button.data('fact2w')
+      var fact3 = button.data('fact3')
+      var fact3w = button.data('fact3w')
+      var fact4 = button.data('fact4')
+      var fact4w = button.data('fact4w')
+      var solving = button.data('solving')
+      var kas_id = button.data('kasid')
+      var modal = $(this)
+
+      modal.find('.modal-body #fact1').val(fact1);
+      modal.find('.modal-body #fact1w').val(fact1w);
+      modal.find('.modal-body #fact2').val(fact2);
+      modal.find('.modal-body #fact2w').val(fact2w);
+      modal.find('.modal-body #fact3').val(fact3);
+      modal.find('.modal-body #fact3w').val(fact3w);
+      modal.find('.modal-body #fact4').val(fact4);
+      modal.find('.modal-body #fact4w').val(fact4w);
+      modal.find('.modal-body #solving').val(solving);
+      modal.find('.modal-body #kas_id').val(kas_id);
 })
 
 
