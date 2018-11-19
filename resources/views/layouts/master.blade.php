@@ -123,7 +123,7 @@
       Dhany Ricky (1711600278)
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2018 <a href="#">Kelompok 3</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2018 <a href="#">Kelompok 4</a>.</strong> All rights reserved.
   </footer>
 </div>
 
